@@ -1,2 +1,7 @@
-@import url("/node_modules/bootstrap-icons/font/bootstrap-icons.css");
-@import 'custom';
+$primary: #906247;
+$secondary: #B6AC97;
+$dark: #392C1E;
+$black: #292222;
+$font-family-sans-serif: "Montserrat", sans-serif !default;
+
+@import "../node_modules/bootstrap/scss/bootstrap";
