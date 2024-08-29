@@ -31,16 +31,26 @@
                 <a class="nav-link" href="#">Réservation</a>
               <li class="nav-item">
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Mon compte </a>
+                  <a class="nav-link" href="/account">Mon compte </a>
                   </li>
 
             <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Rechercher" aria-label="Search">
+              <input class="form-control me-1" type="search" placeholder="Rechercher" aria-label="Search">
              
-            </form>
-                <li class="nav-item">
-                  <a class="nav-link" href="/signin">Connexion</a>
+            </form> 
+                 <li class="nav-item">
+                  <a class="nav-link" href="/account">Mon compte</a>
                 </li>
+                <li class="nav-item" data-show="disconnected">
+                 
+                <li class="nav-item">
+                  <a class="nav-link" href="/signin">Connexion </a>
+                </li>
+                <li class="nav-item" data-show="connected">
+                <li class="nav-item">
+                  <button class="nav-link" id="signout-btn">Deconnexion </a>
+                </li>
+               
              </ul>
           </div>
         </div>
@@ -69,9 +79,10 @@
             </div>
         </div>
     </footer>
-
+    <script src="js/auth/script.js"></script>
     <script type="module" src="Router/router.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script> 
     <script src="script.js"></script>
+    
 </body>
 </html>
