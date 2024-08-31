@@ -56,11 +56,6 @@ function isConnected(){
     }
 }
 
-if(isConnected()){
-    alert("Vous êtes connecté");
-} else {
-    alert("Vous n'êtes pas connecté");
-}
 
 function showAndHideElement(elementId, show){
     const userConnected = isConnected();
