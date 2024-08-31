@@ -13,7 +13,7 @@ function checkCredentials() {
         const token = "giokjldmglsglmdjgdqlikgjkolpgrdgqdmgerqg";
         setToken(token);
 
-        setCookie(RoleCookieName, "admin", 7);
+        setCookie(RoleCookieName, "client", 7);
         window.location.replace ("/");
 
     }

@@ -57,14 +57,34 @@ function isConnected(){
 }
 
 
-function showAndHideElement(elementId, show){
+function showAndHideElementsForRoles(){
     const userConnected = isConnected();
     const role = getRole();
 
-    let allElements = document.querySelectorAll('[data-show]');
+    let allElementsToEdit = document.querySelectorAll('[data-show]');
 
-    allElements.ToEdit.array.forEach(element => {
+    allElementsToEdit.forEach(element =>{
         switch(element.dataset.show){
+            case 'disconnected': 
+                if(userConnected){
+                    element.classList.add("d-none");
+                }
+                break;
+            case 'connected': 
+                if(!userConnected){
+                    element.classList.add("d-none");
+                }
+                break;
+            case 'admin': 
+                if(!userConnected || role != "admin"){
+                    element.classList.add("d-none");
+                }
+                break;
+            case 'client': 
+                if(!userConnected || role != "client"){
+                    element.classList.add("d-none");
+                }
+                break;
         }
     })
 }
