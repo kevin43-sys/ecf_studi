@@ -1,27 +1,33 @@
-  <div class="hero-scene text-center text-white">
-    <div class="hero-scene-content">
-        <h1>Connexion</h1>
-    </div>
-  </div>
 
-    <div class="container">
-      <form>
-          <div class="mb-3">
-            <label for="EmailInput" class="form-label">Email :</label>
-            <input type="email" class="form-control" id="EmailInput" placeholder="Email" name="Email"> 
-          </div>
-          <div class="invalid-feedback">
-            Le mail et le mot de passe ne correspondent pas.
-          </div>
-          <div class="mb-3">
-            <label for="PasswordInput" class="form-label">Mot de passe :</label>
-            <input type="password" class="form-control" id="PasswordInput" name="Password" placeholder="Entrez votre mot de passe">
-          </div>
-          <div class="text-center">
-              <button type="submit" class="btn btn-primary" id="btnSignin">Connexion</button>
-          </div>
-      </form>
-      <div class="text-center pt-3 ">
-          <a class="text-black" href="/signup">Vous n’avez pas de compte ? Inscrivez-vous ici !</a>
-      </div>
-  </div>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page de Connexion</title>
+    
+    <link rel="stylesheet" href="scss/signin/signin.css">
+</head>
+<main>
+    <div class="container mt-5">
+        <h1 class="text-center">Connexion</h1>
+        <form class="mx-auto" style="max-width: 400px;"> 
+            <div class="mb-3">
+                <label for="EmailInput" class="form-label">Email :</label>
+                <input type="email" class="form-control" id="EmailInput" placeholder="Email" name="Email" required>
+                <div class="invalid-feedback">
+                    Le mail et le mot de passe ne correspondent pas.
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="PasswordInput" class="form-label">Mot de passe :</label>
+                <input type="password" class="form-control" id="PasswordInput" name="Password" placeholder="Entrez votre mot de passe" required>
+            </div>
+            <div class="text-center mt-4">
+                <button type="submit" class="btn btn-primary" id="btnSignin">Connexion</button>
+            </div>
+        </form>
+        <div class="text-center pt-3">
+            Vous n’avez pas de compte ? <a class="text-black" href="/signup">Inscrivez-vous ici !</a>
+        </div>
+    </div>
+</main>

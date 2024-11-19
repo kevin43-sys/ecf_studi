@@ -1,0 +1,15 @@
+@import url("../../node_modules/bootstrap-icons/font/bootstrap-icons.css");
+.custom-select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding-right: 30px; /* Add padding to make space for the arrow */
+}
+.btn-center {
+    display: flex;
+    justify-content: center;
+}
